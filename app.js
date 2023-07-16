@@ -9,6 +9,11 @@ const app = Vue.createApp({
       showBooks: true,
       x: 0,
       y: 0,
+      books: [
+        { title: "البداية والنهاية", author: "ابن كثير" },
+        { title: "ثم لم يبق أحد", author: "أغاثا كريستي" },
+        { title: "دراسة في القرمزي", author: "آرثرر كونان دويل" },
+      ],
     };
   },
   methods: {
