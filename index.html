@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+      .box {
+        padding: 100px 0px;
+        width: 400px;
+        text-align: center;
+        background: #ddd;
+        margin: 20px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <!-- <h1>Hello world!</h1> -->
@@ -25,6 +35,14 @@
         <span v-if="showBooks">Hide Books</span>
         <span v-else>Show Books</span>
       </button>
+
+      <br />
+      <br />
+      <!--Mouse events-->
+      <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
+      <div class="box" @mouseleave="handleEvent">mouseleave (exit)</div>
+      <div class="box" @dbclick="handleEvent">dbclick</div>
+      <div class="box" @mousemove="handleMouseMove">Position: {{x}},{{y}}</div>
     </div>
 
     <script src="./app.js"></script>
